@@ -10,7 +10,9 @@
             
         </style>
        
-        <script src="../js/miJs.js"></script>
+        <!--<script src="../js/miJs.js"></script>-->
+        <script src="../js/ejemploArrays.js"></script>
+        
         
         <!--usar el Jquery-->
         <script src="../jQuery/jquery-3.6.0.js"></script>
@@ -18,8 +20,29 @@
     </head>
 
     <body>
-
+        
         <h1 class="titulo">Comunicaciones Helpdesk</h1>
+
+        <!--<script src="../js/ejemploPrompt.js"></script>-->
+        <script>
+            document.write("<p> El primer articulo es <strong>");
+                document.write(articulos[0] + "</strong></p>"); // con esto llamas al file ejemploArrays.js y a la primera posicion del array llamado articulos
+            //agregar un elemento al array
+            articulos.push("Balon");
+            document.write("<p> Hemos agregado el elemento <strong> " + articulos[articulos.length-1] + "</strong> al array</p>");
+            //borrar el primer elemento del array
+            document.write("<p> El primer elemento es <strong> " + articulos[0] + "</strong> al array</p>");    
+            articulos.shift();
+            document.write("<p> El primer elemento es <strong> " + articulos[0] + "</strong> al array</p>");    
+            
+            //borrar el ultimo elemento del array
+            document.write("<p> El ultimo elemento es <strong> " + articulos[articulos.length-1] + "</strong> al array</p>");    
+            articulos.pop();
+            document.write("<p> El ultimo elemento es <strong> " + articulos[articulos.length-1] + "</strong> al array</p>");    
+            
+        </script>
+
+        
         
 
         
